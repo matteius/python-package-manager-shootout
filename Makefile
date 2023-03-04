@@ -86,7 +86,7 @@ pipenv-install:
 pipenv-update:
 	cd pipenv; pipenv update
 pipenv-add-package:
-	cd pipenv; pipenv install $(PACKAGE)
+	cd pipenv; pipenv update $(PACKAGE)
 pipenv-version:
 	@pipenv --version | awk '{print $$3}'
 
